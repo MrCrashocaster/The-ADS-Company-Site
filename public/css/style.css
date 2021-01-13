@@ -1,0 +1,756 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #FFFEE6;
+}
+
+@font-face {
+    font-family: "Schnyder Cond M Light";
+    src: url("../font/04d799f9fc4bd0a0973b3331ff889f32.eot");
+    /* IE9*/
+    src: url("../font/04d799f9fc4bd0a0973b3331ff889f32.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.woff2") format("woff2"), /* chrome、firefox */
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.woff") format("woff"), /* chrome、firefox */
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.svg#Schnyder Cond M Light") format("svg");
+    /* iOS 4.1- */
+}
+
+main {
+    overflow: hidden;
+}
+
+/*-----------------------------------------------------------------debut---------------------------------------------------------*/
+
+.x.mandatory-scroll-snapping {
+    scroll-snap-type: both mandatory;
+}
+
+.t-center {
+    text-align: right;
+}
+
+.thanks {
+    font-family: "Schnyder Cond M Light";
+    font-style: normal;
+    font-weight: initial;
+    color: #393939;
+    margin-left: 5vw;
+    margin-bottom: 50vh;
+}
+
+a {
+    text-decoration: none;
+    color: #393939;
+    font-family: "Schnyder Cond M Light";
+    font-style: normal;
+    font-weight: initial;
+}
+
+.snap-align-start {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.relative {
+    position: relative;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.hi {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFEE6;
+    z-index: -2;
+}
+
+.ml-vh {
+    margin-left: 50vh;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    justify-content: space-between;
+    margin-top: 5vh;
+    padding: 0px 80px;
+}
+
+.about {
+    color: #393939;
+    font-family: "Schnyder Cond M Light";
+    font-style: normal;
+    font-weight: initial;
+    width: 70%;
+    font-size: 3vw;
+    margin-left: 5vw;
+}
+
+.bighi {
+    font-size: 10vw;
+}
+
+.tpre {
+    font-family: "Schnyder Cond M Light";
+    font-style: normal;
+    font-weight: initial;
+    font-size: 17vw;
+    text-align: center !important;
+    line-height: normal;
+    color: #393939;
+    margin-top: 40vh;
+    transform: translateY(-40%);
+    margin-bottom: -10px !important;
+}
+
+.tdpre {
+    font-family: "Schnyder Cond M Light";
+    font-style: normal;
+    font-weight: initial;
+    background-color: #FFFEE6;
+    width: 100%;
+    font-size: 2em;
+    color: #393939;
+}
+
+#opacity {
+    opacity: 0;
+    animation: fadeIn 5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    margin-top: 3vh;
+}
+
+.nav-item {
+    margin: 0px 90px;
+}
+
+a {
+    text-decoration: none;
+    color: #393939;
+}
+
+.moip {
+    width: 100%;
+    justify-content: space-between !important;
+}
+
+.moi {
+    max-width: 100%;
+    height: auto;
+}
+
+.me {
+    font-size: 30px;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+body {
+    margin: 0px;
+    font-family: 'Roboto';
+    text-align: left;
+}
+
+#container {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 140px;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    margin-bottom: -140px;
+}
+
+#flip {
+    height: 140px;
+    overflow: hidden;
+}
+
+#flip>div>div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#flip div:first-child {
+    animation: show 5s linear;
+}
+
+@keyframes show {
+    5% {
+        margin-top: -400px;
+    }
+    0% {
+        margin-top: -500px;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    top: 95vh;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation: fade_move_down 4s ease-in-out infinite;
+    animation: fade_move_down 4s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade_move_down {
+    0% {
+        -moz-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/*-----------------------------------------------------------------gallery---------------------------------------------------------*/
+
+* {
+    transition: all 1s ease 0s;
+}
+
+/* Colours */
+
+::selection {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+::-moz-selection {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.g>div+div {
+    background-color: #FFFEE6;
+}
+
+.g>div+div article:nth-child(1) {
+    background-color: #FFFEE6;
+}
+
+.g>div+div article:nth-child(1):hover {
+    background-image: url(../img/converse4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.g>div+div article:nth-child(2) {
+    background-color: #FFFEE6;
+}
+
+.g>div+div article:nth-child(2):hover {
+    background-image: url(../img/webd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g>div+div article:nth-child(3) {
+    background-color: #FFFEE6;
+}
+
+.g>div+div article:nth-child(3):hover {
+    background-image: url(../img/converse4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g>div+div article:nth-child(4) {
+    background-color: #FFFEE6;
+}
+
+.g>div+div article:nth-child(4):hover {
+    background-image: url(../img/webd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g>div+div article:nth-child(5) {
+    background: #FFFEE6;
+}
+
+.g>div+div article:nth-child(5):hover {
+    background-image: url(../img/converse4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Main layout */
+
+.g,
+.g>div+div {
+    width: 100vw;
+    height: 100vh;
+}
+
+.g>div+div {
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* Articles */
+
+.g>div+div article {
+    flex: initial;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    padding: 2vh 1vw;
+    position: relative;
+}
+
+/* Big Headings */
+
+.g>div:first-child {
+    position: fixed;
+    display: none;
+    bottom: 8vh;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    z-index: 2;
+}
+
+.g>div:first-child h1,
+.g>div:first-child h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hover interaction */
+
+.g>div+div:hover article {
+    flex: initial;
+    width: 10%;
+}
+
+.g>div+div article:hover {
+    width: 70%;
+}
+
+article>div {
+    opacity: 0;
+    transition: opacity 0.2s ease 0;
+}
+
+article:hover>div {
+    opacity: 1;
+    transition: opacity 0.3s ease 0.3s;
+}
+
+/* navigation */
+
+.g>div+div article>h2 {
+    font-family: "Schnyder Cond M Light";
+    font-weight: initial;
+    text-align: center;
+    margin-top: 6vh;
+    width: 100%;
+    color: #393939;
+    font-size: 3.5vh;
+}
+
+.g>div+div:hover article>h2 {
+    bottom: 2.8vh;
+    font-size: 2vh;
+    text-shadow: rgb(0, 0, 0) 0px 0px 300px;
+}
+
+.g>div+div article:hover>a h2 {
+    bottom: 2.2vh;
+    font-size: 10vh;
+    margin-top: 0px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0px 0px 300px;
+}
+
+.g>div+div article:hover>h2 {
+    bottom: 2.2vh;
+    font-size: 10vh;
+    color: white;
+}
+
+/* Article layouts */
+
+article>div {
+    text-align: left;
+    width: 58vw;
+}
+
+article>div p,
+article>div h2,
+article>div h3 {
+    margin: 0 0 1em 0;
+    width: 30vw;
+}
+
+article>div p {
+    width: 30vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+
+/* Mobile */
+
+@media (max-width: 1366px) {
+    .g>div+div article {
+        padding: 2vh 3vw;
+    }
+    h2 {
+        font-weight: lighter !important;
+    }
+    .g>div+div article>h2 {
+        bottom: 23vh;
+        min-width: 12em;
+        text-align: left;
+        font-weight: initial;
+        transform: none;
+        transform-origin: 0 0 0;
+        opacity: 1;
+    }
+    .g>div+div article:hover>h2 {
+        opacity: 0;
+        font-weight: initial;
+    }
+    article div {
+        max-height: calc(100% - 28vh);
+        overflow-y: auto;
+        display: none;
+    }
+    article div article div p {
+        width: 50vw;
+    }
+    .g>div+div article {
+        flex: initial;
+        width: 100%;
+        height: 0px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        vertical-align: bottom;
+        box-sizing: border-box;
+        padding: 0vh 0vw;
+        position: relative;
+    }
+    .g>div+div {
+        list-style: none;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        overflow: hidden;
+    }
+    .g>div+div:active {
+        display: flex;
+    }
+    .g>div+div:hover article {
+        width: 100%;
+    }
+    .g>div+div article>h2 {
+        font-family: "Schnyder Cond M Light";
+        font-weight: initial;
+        text-align: center !important;
+        margin-top: 6vh;
+        width: 100%;
+        color: #393939;
+        font-size: 5.5vh;
+    }
+    .g>div+div article>h2 {
+        bottom: 23vh;
+        min-width: 0;
+        text-align: left;
+        transform: none;
+        transform-origin: 0 0 0;
+        opacity: 1;
+    }
+    .gallery {
+        display: none;
+    }
+}
+
+.gallery {
+    width: 100%;
+    height: 0;
+    padding-top: 40%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery .inner {
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 22px;
+    grid-template-areas: "photo-1 photo-1 photo-2 photo-3 photo-3 photo-4" "photo-5 photo-5 photo-2 photo-3 photo-3 photo-4" "photo-5 photo-5 photo-2 photo-7 photo-8 photo-4" "photo-6 photo-6 photo-6 photo-7 photo-8 photo-9" "photo-6 photo-6 photo-6 photo-7 photo-8 photo-9";
+}
+
+.gallery .inner div {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery .inner div:nth-child(1) {
+    grid-area: photo-1;
+}
+
+.gallery .inner div:nth-child(2) {
+    grid-area: photo-2;
+}
+
+.gallery .inner div:nth-child(3) {
+    grid-area: photo-3;
+}
+
+.gallery .inner div:nth-child(4) {
+    grid-area: photo-4;
+}
+
+.gallery .inner div:nth-child(5) {
+    grid-area: photo-5;
+}
+
+.gallery .inner div:nth-child(6) {
+    grid-area: photo-6;
+}
+
+.gallery .inner div:nth-child(7) {
+    grid-area: photo-7;
+}
+
+.gallery .inner div:nth-child(8) {
+    grid-area: photo-8;
+}
+
+.gallery .inner div:nth-child(9) {
+    grid-area: photo-9;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .nav-item {
+        margin: 5vw;
+    }
+    a {
+        text-decoration: none;
+        color: #393939;
+        text-align: center;
+        font-size: 6vw;
+    }
+    .tpre {
+        margin-top: 20vh;
+    }
+    .hi {
+        height: 50vh;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    h2 {
+        font-weight: lighter !important;
+        font-size: 10vw;
+    }
+    .nav-item {
+        margin: 5vw;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    h2 {
+        font-weight: lighter !important;
+        font-size: 10vw;
+    }
+    .nav-item {
+        margin: 5vw;
+    }
+    .thanks {
+        margin-bottom: 40vh;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10vh;
+    }
+    .about {
+        padding: 0vh;
+        width: 90%;
+        font-size: 5vw;
+        text-align: center;
+        margin: auto;
+    }
+    .aw {
+        height: 50px;
+    }
+    #awwwards {
+        top: 5vh !important;
+        left: 0;
+    }
+}
+
+@media (max-width: 667px) {
+    .g,
+    .g>div+div {
+        width: 100vw;
+        height: 200vh !important;
+    }
+}
+
+@media (max-width: 1366px) {
+    .g,
+    .g>div+div {
+        width: 100vw;
+        height: 110vh;
+    }
+    .g>div+div article:hover>a h2 {
+        bottom: 0;
+        font-size: 10vh;
+        margin-top: 0px;
+        color: #393939;
+        text-shadow: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .g,
+    .g>div+div {
+        width: 100vw;
+        height: 55vh !important;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1366.98px) {
+    h2 {
+        font-weight: lighter !important;
+        font-size: 10vw;
+        margin: 0px 0px 0px 0px;
+    }
+    .nav-item {
+        margin: 5vw;
+    }
+    .ab {
+        margin: 40vh 0px 10vh;
+    }
+    .g,
+    .g>div+div {
+        width: 100vw;
+        height: 140vh;
+    }
+}

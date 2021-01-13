@@ -1,0 +1,81 @@
+/* 
+    This CSS file was created by OwL for use by pointer.js, 
+     witch can be found on https://seattleowl.com. 
+*/
+
+#pointer-dot {
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 0px solid black;
+    position: fixed;
+    border-radius: 4px;
+    color: black;
+    z-index: 30;
+    pointer-events: none;
+    transition: border-color 0.5s;
+}
+
+#pointer-ring {
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    padding: 15px;
+    border: 2px solid #750c7e;
+    position: fixed;
+    mix-blend-mode: difference;
+    border-radius: 100px;
+    background-color: white;
+    z-index: 30;
+    pointer-events: none;
+}
+
+html {
+    cursor: none !important;
+}
+
+a {
+    cursor: none !important;
+}
+
+#pointer-ring {
+    transition: none !important;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .ti {
+        font-size: 18vw;
+        text-align: center;
+        margin: 33vh 0px 33vh;
+    }
+    .fcf-btn-block {
+        display: block;
+        width: 100%;
+    }
+    .fcf-btn-lg,
+    .fcf-btn-group-lg>.fcf-btn {
+        padding: 0.5rem 1rem;
+        font-size: 7vw;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+    }
+    .fcf-body {
+        font-size: 10vw;
+        text-align: center;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1366.98px) {
+    #pointer-dot {
+        display: none;
+    }
+    #pointer-ring {
+        display: none;
+    }
+}

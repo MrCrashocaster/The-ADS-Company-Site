@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Schnyder Cond M Light";
+    src: url("../font/04d799f9fc4bd0a0973b3331ff889f32.eot");
+    /* IE9*/
+    src: url("../font/04d799f9fc4bd0a0973b3331ff889f32.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.woff2") format("woff2"), /* chrome、firefox */
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.woff") format("woff"), /* chrome、firefox */
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../font/04d799f9fc4bd0a0973b3331ff889f32.svg#Schnyder Cond M Light") format("svg");
+    /* iOS 4.1- */
+}
+
+body {
+    margin: 0;
+    font-family: "Schnyder Cond M Light";
+    width: 100%;
+    background-color: #FFFEE6;
+}
+
+.title-webdesign {
+    font-size: 10vw !important;
+}
+
+.display-f {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.display-ff {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 40%;
+}
+
+.boxx {
+    width: 70%;
+    text-align: center;
+}
+
+.boxxx {
+    width: 52%;
+    text-align: center;
+}
+
+.imgg {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.lola {
+    font-size: 15vw !important;
+}
+
+.close {
+    z-index: 3000 !important;
+    width: 32px;
+    position: fixed;
+    height: 32px;
+    right: 1%;
+    top: 2%;
+    color: black;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: black;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.menu,
+.menu-bg,
+.menu-burger {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 0;
+    right: 25px;
+    top: 25px;
+}
+
+.menu-bg {
+    background: #5B84B1FF;
+    pointer-events: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    right: 50px;
+    top: 50px;
+    -webkit-transform: translate3d(50%, -50%, 0);
+    transform: translate3d(50%, -50%, 0);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.menu-bg.fs {
+    -webkit-transform: translate3d(50%, -50%, 0);
+    transform: translate3d(50%, -50%, 0);
+    width: 300vw;
+    height: 300vw;
+}
+
+.menu-burger {
+    color: white;
+    padding-top: 5px;
+    -webkit-user-select: none;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+.menu-burger.fs {
+    -webkit-transform: rotate(-180deg) translateY(10px);
+    transform: rotate(-180deg) translateY(10px);
+}
+
+.menu-items {
+    position: absolute;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin-top: 100px;
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+    pointer-events: none;
+}
+
+.menu-items a {
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 0;
+    margin-top: 0px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items.fs {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.menu-items.fs a {
+    opacity: 1;
+    margin-top: 75px;
+}
+
+/*-----------------------------------------------------------------debut---------------------------------------------------------*/
+
+.m-auto {
+    margin: auto;
+}
+
+.hi {
+    width: 100%;
+    height: 100vh;
+    background-color: #FA7268;
+}
+
+.ml-vh {
+    margin-left: 50vh;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-family: "Schnyder Cond M Light";
+    color: #393939;
+    font-size: 23vw;
+    text-transform: uppercase;
+    font-weight: initial;
+    margin: 40vh 0px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(143, 6, 6, 0);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 38px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+.img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .box {
+        width: 80%;
+    }
+    .display-f {
+        margin-bottom: 30vh;
+    }
+    .display-ff {
+        margin-bottom: 30vh;
+    }
+}
